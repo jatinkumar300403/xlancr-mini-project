@@ -1,15 +1,8 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/xYHqD5MkVkT
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { UserButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
-import signin from "@/app/sign-in/[[...sign-in]]/page";
-import signup from "@/app/sign-up/[[...sign-up]]/page";
 import { Mail } from "lucide-react";
 
 export default function Navbar() {
@@ -69,7 +62,7 @@ export default function Navbar() {
               </Link>
               /
               <Link href="/sign-up">
-                <Button size="sm" variant="ghost">
+                <Button size="lg" variant="outline">
                   <Mail className="mr-2 h-4 w-4" /> Sign Up
                 </Button>
               </Link>
